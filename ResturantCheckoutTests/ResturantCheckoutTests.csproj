@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>ResturantCheckoutTests</AssemblyName>
+    <RootNamespace>ResturantCheckoutTest</RootNamespace>
+    <SignAssembly>False</SignAssembly>
+    <Title>ResturantCheckoutTests</Title>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Drivers\**" />
+    <Compile Remove="Support\**" />
+    <EmbeddedResource Remove="Drivers\**" />
+    <EmbeddedResource Remove="Support\**" />
+    <None Remove="Drivers\**" />
+    <None Remove="Support\**" />
+    <ReqnrollFeatureFiles Remove="Drivers\**" />
+    <ReqnrollFeatureFiles Remove="Support\**" />
+    <ReqnrollObsoleteCodeBehindFiles Remove="Drivers\**" />
+    <ReqnrollObsoleteCodeBehindFiles Remove="Support\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.10.0" />
+    <PackageReference Include="Reqnroll.NUnit" Version="2.2.1" />
+    <PackageReference Include="nunit" Version="3.14.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.5.0" />
+  </ItemGroup>
+
+</Project>
